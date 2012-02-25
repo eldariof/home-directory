@@ -4,6 +4,10 @@
     (load
      (expand-file-name "/home/eldar/.emacs.d/elpa/package.el"))
   (package-initialize))
+    
+(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
+                          ("gnu" . "http://elpa.gnu.org/packages/")
+                        ("marmalade" . "http://marmalade-repo.org/packages/")))
 
 (setq inhibit-splash-screen t)
 
@@ -21,6 +25,16 @@
     '(display-time-mode t)
     '(column-number-mode t)
     '(tool-bar-mode nil))
+    
+;; Automatically save and restore sessions
+(setq desktop-dirname             "/home/eldar/.emacs.d/desktop/"
+      desktop-base-file-name      "emacs.desktop"
+      desktop-base-lock-name      "lock"
+      desktop-path                (list desktop-dirname)
+      desktop-save                t
+      desktop-files-not-to-save   "^$" ;reload tramp paths
+      desktop-load-locked-desktop nil)
+(desktop-save-mode 1)
 
 ;; Short answers    
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -40,22 +54,11 @@
 
 ;; Show line numbers
 (global-linum-mode t)
-    
-(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
-                          ("gnu" . "http://elpa.gnu.org/packages/")
-                        ("marmalade" . "http://marmalade-repo.org/packages/")))
-
-(when (load (expand-file-name "/home/eldar/.emacs.d/package.el"))
-    (package-initialize))
 
 ;; Must be installed color themes for GNU Emacs    
 ;; A dark color theme for GNU Emacs    
 (require 'color-theme-actress)
 (color-theme-actress)
-
-;; Must be installed emacs integration for rvm
-(require 'rvm)
-(rvm-use-default) ;; use rvm's default ruby for the current Emacs session
 
 ;; Resource: http://cx4a.org/software/auto-complete/manual.html
 (require 'auto-complete-config)
@@ -71,6 +74,10 @@
 (add-hook 'ruby-mode-hook
           (lambda ()
             (local-set-key (kbd "C-c .") 'ac-complete-rsense)))
+
+;; Must be installed emacs integration for rvm
+(require 'rvm)
+(rvm-use-default) ;; use rvm's default ruby for the current Emacs session
 
 ;; Start completion automatically after inserting . and ::
 (add-hook 'ruby-mode-hook
@@ -161,4 +168,10 @@
 ;; http://www.youtube.com/watch?v=ZB5-r9km_eQ
 (add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
 (require 'rdebug)
+
+;; https://github.com/eschulte/rhtml
+(add-to-list 'load-path "/home/eldar/.emacs.d/plugins/rhtml")
+(require 'rhtml-mode)
+(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
+
 			
