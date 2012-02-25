@@ -156,4 +156,9 @@
 
 ;; Mode for automatic insertion of end blocks for Ruby			
 (ruby-end-mode t)
+
+;; http://bashdb.sourceforge.net/ruby-debug/rdebug-emacs.html#Installation
+;; http://www.youtube.com/watch?v=ZB5-r9km_eQ
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp")
+(require 'rdebug)
 			
