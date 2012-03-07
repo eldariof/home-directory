@@ -174,4 +174,9 @@
 (require 'rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
 
+;; Mode for quickly browsing, filtering, and editing directories
+;; http://jblevins.org/projects/deft/
+(add-to-list 'load-path "/home/eldar/opt/deft")
+(require 'deft)
+
 			
