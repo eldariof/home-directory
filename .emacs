@@ -195,3 +195,25 @@
      (setq interprogram-cut-function 'xsel-cut-function)   
      (setq interprogram-paste-function 'xsel-paste-function)
 )) 
+
+;; http://solovyov.net/blog/2007/07/11/emacs-tabbar/
+(require 'tabbar)
+
+(global-set-key [C-S-tab] 'tabbar-backward-tab)
+(global-set-key [C-tab] 'tabbar-forward-tab)
+
+(set-face-foreground 'tabbar-default "LightSteelBlue")
+(set-face-background 'tabbar-default "DarkSlateGray")
+(set-face-foreground 'tabbar-selected "pale green")
+(set-face-bold-p 'tabbar-selected t)
+(set-face-attribute 'tabbar-button nil :box '(:line-width 1 :color "gray72"))
+
+(setq tabbar-buffer-groups-function
+      (lambda () 
+        (list
+         (cond
+          ((find (aref (buffer-name (current-buffer)) 0) " *") "*")
+          (t "All Buffers"))
+         )))
+
+(tabbar-mode)
