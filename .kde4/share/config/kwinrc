@@ -1,0 +1,28 @@
+[Compositing]
+Enabled=false
+OpenGLIsUnsafe=false
+
+[Desktops]
+Name_1=Интернет
+Name_2=Система
+Name_3=Разработка
+Name_4=Офис и перевод
+Name_5=Почта и новости
+Name_6=Чаты
+Number=6
+
+[Plugins]
+kwin4_effect_cubeslideEnabled=false
+kwin4_effect_fadedesktopEnabled=false
+kwin4_effect_slideEnabled=true
+
+[PopupInfo]
+PopupHideDelay=1000
+ShowPopup=false
+TextOnly=false
+
+[Style]
+PluginLib=kwin3_plastik
+
+[Windows]
+RollOverDesktops=true

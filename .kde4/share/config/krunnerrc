@@ -1,0 +1,45 @@
+[EdgePositions]
+Screen0=750,0
+
+[General]
+PastQueries=konsole,,amarok,cho
+
+[Interface]
+Size=420,500
+
+[PlasmaRunnerManager]
+LaunchCounts=1 shell_banshee,7 services_kde4-kfilereplace.desktop,1 services_kde4-kopete.desktop,2 shell_amule,3 shell_skype,2 services_kde4-digikam.desktop,1 services_FoxitReader-FoxitReader.desktop,6 services_kde4-Kontact.desktop,1 services_kde4-ktorrent.desktop,4 services_kde4-amarok.desktop,2 services_wireshark.desktop,8 services_kde4-konsole.desktop,1 services_skype-skype.desktop,1 services_nvidia-settings.desktop,1 services_khtml_java_js.desktop,3 services_pavucontrol.desktop,1 services_kde4-kuser.desktop,6 services_amule.desktop,1 services_kde4-kwalletmanager.desktop,3 services_kcm_akonadi.desktop,2 services_kde4-akonadiconsole.desktop,1 windows_0_23068690,3 services_kde4-gwenview.desktop,1 shell_vlc,1 shell_amarok,1 shell_firefox,2 services_goldendict.desktop,1 services_kde4-krusader.desktop
+
+[Plugins]
+PowerDevilEnabled=false
+bookmarksEnabled=false
+calculatorEnabled=false
+desktopsessionsEnabled=false
+installerEnabled=false
+killEnabled=false
+locationsEnabled=false
+nepomuksearchEnabled=false
+org.kde.windowedwidgetsEnabled=false
+placesEnabled=false
+plasma-desktopEnabled=false
+recentdocumentsEnabled=false
+servicesEnabled=true
+shellEnabled=true
+solidEnabled=false
+webshortcutsEnabled=false
+windowsEnabled=false
+
+[TaskDialog]
+Height 1080=575
+Width 1920=1110
+filterState=0
+headerState=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x05\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0fL0\x00\x00\x00\x05\x00\x00\x00\r\x00\x00\x00d\x00\x00\x00\x0c\x00\x00\x00d\x00\x00\x00\x06\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x00\x02\x00\x00\x00d\x00\x00\x04B\x00\x00\x00\x0f\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x00\x00»\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00h\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00§\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00v\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00U\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00w\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00≠\x00\x00\x00\x01\x00\x00\x00\x00
+ioInformation=5
+ioUnits=1
+normalizeCPUUsage=true
+showCommandLineOptions=false
+showTooltips=true
+showTotals=true
+units=1
+updateIntervalMSecs=2000
+version=5
