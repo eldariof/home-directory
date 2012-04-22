@@ -2,9 +2,9 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sat Feb 25 23:48:45 2012
+;; Created Mon Apr 23 00:06:02 2012
 ;; Desktop file format version 206
-;; Emacs version 23.3.3
+;; Emacs version 23.4.2
 
 ;; Global section:
 (setq desktop-missing-file-warning nil)
@@ -12,29 +12,40 @@
 (setq tags-table-list nil)
 (setq search-ring nil)
 (setq regexp-search-ring nil)
-(setq register-alist nil)
-(setq file-name-history '("~/projects/learning-ruby/demo/app/views/say/hello.html.erb"))
+(setq register-alist '((48 . "2we()")))
+(setq file-name-history '("~/temp/test.rb" "~/temp/test2" "~/temp/test.rb" "~/temp/test2" "~/temp/test.rb" "~/temp/test2" "~/temp/test.rb" "~/projects/learning-ruby/demo/app/views/say/hello.html.erb"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/home/eldar/projects/learning-ruby/demo/app/views/say/goodbye.html.erb"
-  "goodbye.html.erb"
-  'rhtml-mode
-  '(abbrev-mode linum-mode flymake-mode rinari-minor-mode)
-  1
+  "/home/eldariof/temp/test.rb"
+  "test.rb"
+  'ruby-mode
+  '(linum-mode auto-complete-mode flymake-mode ruby-end-mode)
+  151
+  '(118 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/eldariof/temp/test2"
+  "test2"
+  'fundamental-mode
+  '(linum-mode)
+  1128
   '(nil nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix)))
 
 (desktop-create-buffer 206
-  "/home/eldar/projects/learning-ruby/demo/app/views/say/hello.html.erb"
-  "hello.html.erb"
-  'rhtml-mode
-  '(abbrev-mode linum-mode flymake-mode rinari-minor-mode)
-  1
+  "/home/eldariof/.emacs.d/elpa/perspective-1.3/perspective-autoloads.el"
+  "perspective-autoloads.el"
+  'emacs-lisp-mode
+  '(linum-mode auto-complete-mode)
+  833
   '(nil nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix)))
+  '((buffer-file-coding-system . utf-8-unix)))
 

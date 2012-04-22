@@ -1,8 +1,8 @@
-(add-to-list 'load-path "/home/eldar/.emacs.d/")
+(add-to-list 'load-path "/home/eldariof/.emacs.d/")
 
 (when
     (load
-     (expand-file-name "/home/eldar/.emacs.d/elpa/package.el"))
+     (expand-file-name "/home/eldariof/.emacs.d/elpa/package.el"))
   (package-initialize))
     
 (setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
@@ -11,12 +11,7 @@
 
 (setq inhibit-splash-screen t)
 
-(custom-set-faces
-  '(default ((t (:inherit nil :stipple nil :background "white" 
-     :foreground "black" :inverse-video nil
-     :box nil :strike-through nil :overline nil 
-     :underline nil :slant normal :weight normal
-     :height 128 :width normal :foundry "unknown" :family "Ubuntu Mono")))))
+(set-default-font "Droid Sans Mono-11")
     
 (custom-set-variables
     '(warning-minimum-level :error)
@@ -27,7 +22,7 @@
     '(tool-bar-mode nil))
     
 ;; Automatically save and restore sessions
-(setq desktop-dirname             "/home/eldar/.emacs.d/desktop/"
+(setq desktop-dirname             "/home/eldariof/.emacs.d/desktop/"
       desktop-base-file-name      "emacs.desktop"
       desktop-base-lock-name      "lock"
       desktop-path                (list desktop-dirname)
@@ -62,11 +57,11 @@
 
 ;; Resource: http://cx4a.org/software/auto-complete/manual.html
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "/home/eldar/.emacs.d/ac-dict")
+(add-to-list 'ac-dictionary-directories "/home/eldariof/.emacs.d/ac-dict")
 (ac-config-default)
 
 ;; Resource: http://cx4a.org/software/rsense/manual.html#Introduction
-(setq rsense-home "/home/eldar/opt/rsense-0.3")
+(setq rsense-home "/home/eldariof/opt/rsense-0.3")
 (add-to-list 'load-path (concat rsense-home "/etc"))
 (require 'rsense)
 
@@ -170,13 +165,13 @@
 (require 'rdebug)
 
 ;; https://github.com/eschulte/rhtml
-(add-to-list 'load-path "/home/eldar/.emacs.d/plugins/rhtml")
+(add-to-list 'load-path "/home/eldariof/.emacs.d/plugins/rhtml")
 (require 'rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
 
 ;; Mode for quickly browsing, filtering, and editing directories
 ;; http://jblevins.org/projects/deft/
-(add-to-list 'load-path "/home/eldar/opt/deft")
+(add-to-list 'load-path "/home/eldariof/opt/deft")
 (require 'deft)
 
 ;; Copy/paste with emacs in terminal
@@ -217,3 +212,12 @@
          )))
 
 (tabbar-mode)
+
+(iswitchb-mode 1)
+
+;; Must be installed perspective for GNU Emacs  
+;; Load Perspective
+(require 'perspective)
+;; Toggle the perspective mode
+(persp-mode)
+
